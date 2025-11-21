@@ -2,6 +2,7 @@ import Overview from './components/Overview'
 import Timeline from './components/Timeline'
 import KeyFacts from './components/KeyFacts'
 import Resources from './components/Resources'
+import Gallery from './components/Gallery'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           Russo-Ukrainian War
         </h1>
         <p className="mt-3 text-blue-200/90 max-w-3xl mx-auto">
-          A concise, neutral overview with key milestones, facts, and links to reliable sources.
+          A concise, neutral overview with key milestones, facts, images, and links to reliable sources.
         </p>
         <p className="mt-1 text-xs text-blue-300/70 max-w-3xl mx-auto">
           For current developments, always consult multiple up-to-date, credible sources.
@@ -34,12 +35,16 @@ function App() {
         </section>
 
         <section className="bg-slate-800/40 backdrop-blur-sm border border-blue-500/10 rounded-2xl p-6">
+          <Gallery />
+        </section>
+
+        <section className="bg-slate-800/40 backdrop-blur-sm border border-blue-500/10 rounded-2xl p-6">
           <Resources />
         </section>
       </main>
 
       <footer className="relative border-t border-blue-500/10 py-6 text-center text-blue-300/70 text-xs">
-        Informational use only. This app does not provide real-time updates.
+        Informational use only. Images are illustrative and not real-time.
       </footer>
     </div>
   )
